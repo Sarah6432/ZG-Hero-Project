@@ -33,9 +33,7 @@ source ~/.bashrc
 1. Inicialização de Projetos (aczginit_proj)
 Cria uma estrutura padronizada com pasta, README.md e repositório Git inicializado com um único comando.
 
-Uso: aczginit_proj /caminho/do/projeto nome_do_projeto
-
-2. Fluxo de Feature (aczginit e aczgfinish)
+3. Fluxo de Feature (aczginit e aczgfinish)
 Automatiza o padrão de branches feat-.
 
 aczginit <nome>: Mostra o status, cria a branch de feature e lista as existentes.
