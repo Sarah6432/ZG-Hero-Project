@@ -2,7 +2,7 @@
 Este repositório contém uma solução completa de automação para o cotidiano de desenvolvimento no ACZG. O objetivo é otimizar tarefas repetitivas de Git, gerenciar ambientes de forma consistente e implementar uma pipeline de CI (Continuous Integration) local utilizando Shell Script, Aliases e Cron Jobs.
 
 🛠️ Tecnologias Utilizadas
-Shell Script (Bash): Lógica principal de automação.
+Shell Script: Lógica principal de automação.
 
 Git: Controle de versão e automação de fluxos.
 
@@ -12,24 +12,23 @@ Libnotify: Alertas visuais no sistema operacional.
 
 📁 Estrutura do Projeto
 Plaintext
-
-.
 ├── scripts/
 │   ├── git_manage.sh    # Lógica para criação de projetos e gerenciamento de branches
 │   ├── pipeline.sh      # Script agnóstico para testes e compilação
 │   └── auto_commit.sh   # Script de commit automático inteligente
 ├── setup.sh             # O "Instalador" - Configura todo o ambiente
 └── README.md            # Documentação do projeto
+
 ⚙️ Instalação e Configuração
 Para configurar todas as ferramentas em qualquer máquina Linux, basta clonar o repositório e executar o script de setup:
 
 Bash
-
-git clone https://github.com/seu-usuario/zg-hero-project.git
+git clone https://github.com/sarah6432/ZG-Hero-project.git
 cd zg-hero-project
 chmod +x setup.sh
 ./setup.sh
 source ~/.bashrc
+
 📋 Funcionalidades (Tasks)
 1. Inicialização de Projetos (aczginit_proj)
 Cria uma estrutura padronizada com pasta, README.md e repositório Git inicializado com um único comando.
