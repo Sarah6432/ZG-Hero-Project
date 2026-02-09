@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Recebe o caminho do projeto como argumento, ou usa o diretório atual
 PROJETO_DIR=${1:-$(pwd)}
 LOG_FILE="$HOME/aczg_pipeline.log"
 
@@ -8,7 +7,6 @@ cd "$PROJETO_DIR" || exit
 
 echo "[$(date)] Verificando tecnologia do projeto em: $PROJETO_DIR" >> "$LOG_FILE"
 
-# Lógica de detecção e execução
 if [ -f "build.gradle" ]; then
     echo "Projeto Gradle detectado. Executando testes..." >> "$LOG_FILE"
     ./gradlew test >> "$LOG_FILE" 2>&1
@@ -30,7 +28,6 @@ else
     ls -R >> "$LOG_FILE"
 fi
 
-# Verifica se o comando anterior (o teste/compilação) deu certo
 if [ $? -eq 0 ]; then
     STATUS="SUCESSO"
     MSG="Pipeline concluída com êxito!"
