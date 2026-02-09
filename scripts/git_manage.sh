@@ -11,7 +11,6 @@ init_aczg() {
     echo "Projeto $nome criado em $caminho"
 }
 
-# Task 2: Gerenciar Branches
 aczg_init_feat() {
     local nomeEntrega=$1
     git status
